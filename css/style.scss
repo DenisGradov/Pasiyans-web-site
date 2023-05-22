@@ -1,0 +1,83 @@
+@import 'ns.scss';
+
+body{
+  height: 100vh;
+  .wrapper{
+    height: 100%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: rgb(139, 238, 180);
+    .main{
+      flex: 1 auto;
+      .tabl-top-zone {
+        display: flex;
+        justify-content: space-between;
+        .tabl-top-zone-left {
+          position: relative;
+          &__cards-list {
+          }
+          &__last-cards {
+            position: absolute;
+            left: 43px;
+            top: 108px;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: black;
+          }
+          &__open-card {
+            opacity: .2;
+          }
+        }
+        .tabl-top-zone-right {
+          .removedCards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__img {
+              display: inline-block;
+            }
+            .close{
+              opacity: .2;
+            }
+          }
+          .cardIcons{
+            margin-top: -15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            &__img{
+              width: 30px;
+              opacity: 0.33;
+            }
+          }
+        }
+      }
+      .tabl-bottom-zone{
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        .dack-colum{
+          display: flex;
+          flex-direction: column;
+          .card{
+            margin-top: -100px;
+          }
+        }
+      }
+      
+    }
+    .footer{
+
+    }
+  }
+}
+
+.card{
+  display: inline-block;
+  margin: 15px;
+  width: 100px;
+}
